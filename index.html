@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해운대 GO Mobile_intro</title>
+    <!-- 즐겨찾기 추가시 생성되는 파비콘 삽입 -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+     <!-- 초기화 -->
+     <link rel="stylesheet" href="./css/reset.css" type="text/css">
+     <!-- 인트로 화면에 적용되는 서식 -->
+     <link rel="stylesheet" href="./css/intro.css" type="text/css">
+     <!-- 공급업체 접두사 자동으로 붙여주는 스크립트 소스 -->
+     <script src="./script/prefixfree.min.js"></script>
+     <script>
+         // 브라우저 미리보기를 실행하면, n초 뒤에 startpage라는 함수를 실행함 
+         window.onload=function(){
+             setTimeout('startPage()',3000);
+         }
+         function startPage(){
+             document.location.href="main.html";
+         }
+     </script>
+</head>
+<body>
+    <section>
+        <h2>인트로 화면</h2>
+        <img src="./images/intro.png" alt="인트로화면">
+    </section>
+    
+</body>
+</html>

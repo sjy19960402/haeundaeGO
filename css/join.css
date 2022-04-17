@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+@font-face {
+  font-family:"210 옴니고딕OTF";
+  src: local('210 옴니고딕');  /* System font */
+  src: local('210 옴니고딕');  /* IE 8 버전 이하 */
+  src: local('※'), /* else ... */
+         url('../fonts/210-옴니고딕-030.woff') format('woff'),  
+         url('../fonts/210\ 옴니고딕\ 030.ttf') format('truetype'),
+         url('../fonts/210\ 옴니고딕OTF\ 030.otf') format('otf');
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "210 옴니고딕OTF", Montserrat, Arial, Helvetica, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .wrap {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/join_bg.png') no-repeat;
+  }
+
+  .join > p img{
+      height: 160px;
+      margin-bottom: 10px;
+    }
+  
+  .join {
+    width: 84%;
+    height: 800px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1), -3px -3px 5px rgba(0, 0, 0, 0.1);
+  }
+  .back{
+    transform: translateX(-130px);
+  }
+  .back > i {font-size: 16px;}
+  h1 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  
+  .join_name input, .join_n_name input, .join_pw input, .join_pw_0 input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 0px 20px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  /* ?? 닉네임과 비밀번호 칸을 왼쪽정렬하면서 버튼을 한줄로 가져와야함 */
+  .join_name, .join_pw_0, .join_n_name, .join_pw{
+    width: 60%;
+    margin-top: 20px; margin-left: -70px;
+    font-size: 14px;
+  }
+  
+  /* 중복 확인 버튼_위치 조정 */
+  .join_n_name{position: relative;}
+  .join_n_name button{position: absolute; top:26px; right: -70px;}
+
+  .join_pw{position: relative;}
+  .join_pw button{position: absolute; top:26px; right: -70px;}
+
+  /* 중복 확인 버튼_속성 */
+  .join_n_name button, .join_pw button{
+    width: 32%;
+    height: 34px;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    background-color: #44588A;
+    letter-spacing: 0.5px;
+    color: #fff;
+      font-size: 9px;
+  }
+  /* 선택사항 속성 */
+  .check{
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  .check h4{margin-bottom: 10px;}
+  .checkbox input:last-child{margin-left: 20px;}
+  
+  /* 회원가입 버튼 */
+  .join_btn {
+    margin-top: 40px;
+    width: 80%;
+  }
+  .join_btn button {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    background-color: #44588A;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 3px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* 입력창 속성변경 */
+  ::placeholder{font-size: 10px;}

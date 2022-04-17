@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* 배경이미지 */
+.bg{
+  background: url('../images/m_bg.png') no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0px auto; height: auto;
+  padding-bottom: 60px; bottom: 0px;
+  transform: translateY(90px);
+}
+
+/* 검색 */
+.m_search{
+  transform: translateY(380px);
+  padding-top: 20px;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 100;
+}
+.m_search h2 a{
+  font-size: 32px;
+  font-weight: bolder;
+  position: absolute; right: 8%;
+  color: #fff;
+}
+.m_search img{
+  position: absolute; 
+  right:200px;
+  transform: translateY(-4px);
+}
+
+.m_search > p{
+  font-size: 15px;
+  position:absolute; top: 95px;
+}
+.m_search > p a:last-child{
+  color: #fff;
+  font-weight: bold;
+  position: fixed; right: 30px;
+}
+.m_search > p a:first-child{
+  color: rgb(190, 190, 190);
+  margin-left: 40px;
+}
+
+
+/* 하단 슬라이드 */
+.slide{
+  width:100%;
+  overflow: hidden;
+  position:relative;
+  z-index: 1;
+}
+.slide h2{display: none;}
+.mySwiper{
+  margin-top: 500px;
+  width: 160px; height: 160px;
+}
+.swiper-slide{
+  border: 2px solid #F7F1FF;
+  background-color: #F7F1FF;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+.swiper-slide img{height: 100%;}
+
+/* 슬라이드 내부 */
+.swiper-slide a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0.5);
+  position: absolute; left:20px; bottom: 110px;
+}
+.swiper-slide p{
+  position: absolute; left:30px; bottom:70px;
+  font-size: 16px;
+}
+.swiper-slide p img{
+  width: 30px;
+  transform: translateY(10px);
+}

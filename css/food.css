@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:"210 옴니고딕OTF";
+    src: local('210 옴니고딕');  /* System font */
+    src: local('210 옴니고딕');  /* IE 8 버전 이하 */
+    src: local('※'), /* else ... */
+           url('../fonts/210-옴니고딕-030.woff') format('woff'),  
+           url('../fonts/210\ 옴니고딕\ 030.ttf') format('truetype'),
+           url('../fonts/210\ 옴니고딕OTF\ 030.otf') format('otf');
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "210 옴니고딕OTF", Montserrat, Arial, Helvetica, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+ main{
+      width: 100%; height: 1000px;
+      overflow-x: hidden; 
+      background-color: #E1E7F2;
+    }
+
+ /* 상단헤더 */
+ header{
+    width: 100%; height: 100px;
+    left: 0px; right: 0px;
+    position: fixed;
+    font-size: 20px;
+    color: #44588A;
+    background-color: #fff;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.5);
+    border-bottom-left-radius: 60px;
+    z-index: 100;
+}
+/* 제목 */
+header > h2{
+    display: block;
+    margin-top: 40px;
+    margin-left: 100px;
+    position: relative;
+}
+/* 상단 아이콘 */
+.prev{
+    position: absolute; top: 38px; left: 30px;
+    color: #535353;
+}
+.filter{
+    position: absolute; top: 38px; right: 30px;
+}
+.filter img{height: 22px;}
+
+/* 메인콘텐츠 */
+section{
+    width: 100%; height: 280px;
+    border-bottom-left-radius: 80px;
+}
+section:first-child{position: absolute; top: 30px; z-index: 90;}
+section:nth-child(2){position: absolute; top: 240px; z-index: 80;}
+section:nth-child(3){position: absolute; top: 440px; z-index: 70;}
+section:last-child{position: absolute; top: 620px; z-index: 60; height: 340px;}
+section img{
+    width: 100%; height: 100%; overflow: hidden;
+    object-fit:cover;
+}
+section a{
+    width: 200px; height: 200px;
+    padding:20px 26px;
+    background-color: #44588A;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    margin-left: 30px;
+    box-shadow: 5px 5px 2px rgba(49, 49, 49, 0.4), -3px -3px 5px rgba(70, 70, 70, 0.1);
+}
+section h3 {transform: translateY(-100px);}
+

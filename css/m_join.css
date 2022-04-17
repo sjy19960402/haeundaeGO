@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+@font-face {
+  font-family:"210 옴니고딕OTF";
+  src: local('210 옴니고딕');  /* System font */
+  src: local('210 옴니고딕');  /* IE 8 버전 이하 */
+  src: local('※'), /* else ... */
+         url('../fonts/210-옴니고딕-030.woff') format('woff'),  
+         url('../fonts/210\ 옴니고딕\ 030.ttf') format('truetype'),
+         url('../fonts/210\ 옴니고딕OTF\ 030.otf') format('otf');
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "210 옴니고딕OTF", Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .wrap {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/join_bg.png') no-repeat;
+}
+  .m_join > p img{height: 160px;}
+  
+  .m_join {
+    width: 84%;
+    height: 800px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1), -3px -3px 5px rgba(0, 0, 0, 0.1);
+  }
+  .back{
+    transform: translateX(-130px) translateY(-60px);
+  }
+  .back > i {font-size: 16px;}
+  h1 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    transform: translateY(-60px);
+  }
+  .checkbox_group > ul > li:first-of-type{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  .join_phone, .join_number, .join_id{
+    width: 60%;
+    margin-top: 20px; margin-left: -80px;
+    font-size: 14px;
+  }
+  .join_phone input, .join_number input, .join_id input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 0px 20px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+  /* 인증번호 전송 버튼_위치 조정 */
+  .join_phone{position: relative;}
+  .join_phone button{position: absolute; top:26px; right: -85px;}
+
+  .join_id{position: relative;}
+  .join_id button{position: absolute; top:26px; right: -85px;}
+
+ /* 인증번호 전송 버튼_속성 */
+  .join_phone button, .join_id button{
+    width: 40%;
+    height: 34px;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    background-color: #44588A;
+    color: #fff;
+  }
+
+/* 회원가입 버튼 */
+  .join_btn {
+    width: 80%;
+    margin-top: 50px;
+  }
+  .join_btn p {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    background-color: #44588A;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .join_btn p a{
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 2px;
+      display: inline-block;
+      padding: 20px 100px;
+  }
+
+  /* 약관동의 */
+ .checkbox_group {
+     width: 80%; 
+     margin-bottom: 30px;
+ }
+ .checkbox_group label{
+     font-size: 12px;
+     line-height: 26px;
+     font-weight: bolder;
+}
+.necessary{color: red;}
+.select{color: #44588A;}
+span{margin-left: 5px;}
+.checkbox_group i{
+    font-size: 13px;
+    line-height: 26px;
+    color: #ccc;
+    float: right;
+}
+  /* 입력창 속성변경 */
+  ::placeholder{font-size: 10px;}

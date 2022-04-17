@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+@font-face {
+  font-family:"210 옴니고딕OTF";
+  src: local('210 옴니고딕');  /* System font */
+  src: local('210 옴니고딕');  /* IE 8 버전 이하 */
+  src: local('※'), /* else ... */
+         url('../fonts/210-옴니고딕-030.woff') format('woff'),  
+         url('../fonts/210\ 옴니고딕\ 030.ttf') format('truetype'),
+         url('../fonts/210\ 옴니고딕OTF\ 030.otf') format('otf');
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/login_bg.png') no-repeat;
+  }
+  
+  .login {
+    width: 84%;
+    height: 600px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1), -3px -3px 5px rgba(0, 0, 0, 0.1);
+  }
+  .back{
+    transform: translateX(-130px);
+  }
+  .back > i {font-size: 16px;}
+  h1 {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .login_sns {
+    padding: 20px;
+    display: flex;
+  }
+  
+  .login_sns li {
+    padding: 0px 15px;
+  }
+  
+  .login_sns a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50px;
+    background: #fff;
+    font-size: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login_id {
+    margin-top: 30px;
+    width: 80%;
+  }
+  
+  .login_id input, .login_pw input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 0px 20px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .login_pw {
+    margin-top: 20px;
+    width: 80%;
+  }
+  
+  .login_etc {
+    margin-top: 10px;
+    width: 80%;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  .checkbox{margin-top: 4px;}
+  .checkbox label{
+    font-family: "210 옴니고딕OTF", Montserrat, Arial, Helvetica, sans-serif;
+    
+  }
+  .forgot_pw a {
+      color: #96969b;
+      font-family: "210 옴니고딕OTF", Montserrat, Arial, Helvetica, sans-serif;
+      font-size: 10px;
+    }
+  
+  .log_btn {
+    margin-top: 45px;
+    width: 80%;
+  }
+  .log_btn button, .log_btn p {
+    font-family: "210 옴니고딕OTF", Montserrat, Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    outline: none;
+    border-radius: 40px;
+    background-color: #44588A;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .log_btn p a{
+    font-family: "210 옴니고딕OTF", Montserrat, Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    padding: 18px 135px;
+  }

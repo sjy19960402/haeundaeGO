@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:"210 옴니고딕OTF";
+    src: local('210 옴니고딕');  /* System font */
+    src: local('210 옴니고딕');  /* IE 8 버전 이하 */
+    src: local('※'), /* else ... */
+           url('../fonts/210-옴니고딕-030.woff') format('woff'),  
+           url('../fonts/210\ 옴니고딕\ 030.ttf') format('truetype'),
+           url('../fonts/210\ 옴니고딕OTF\ 030.otf') format('otf');
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "210 옴니고딕OTF", montserrat, Arial, Helvetica, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  /* 배경지도 */
+  .map{
+      width: 100%; height: 863px;
+      margin: 0px auto;
+      overflow-x: hidden;
+      background: url('../images/search_bg.png') no-repeat;
+    }
+
+    /* 상단헤더 */
+    header {
+        width: 100%; height: 50px;
+        position: fixed;
+        font-size: 20px;
+        color: #44588A;
+    }
+    h2{
+        display: block;
+        text-align: center;
+    }
+    a{
+        font-size: 20px;
+        color: #44588A;
+    }
+    i{padding-left: 30px; transform: translateY(20px);}
+
+    /* 메인 내비게이션 */
+    .m_gnb > ul{
+        display: flex;
+        padding: 80px 20px 40px 20px;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .m_gnb > ul > li p{
+        color: #44588A;
+        padding-top: 5px;
+        text-shadow: 1px 2px 4px rgb(0, 0, 0, 0.2);
+        font-size: 14px;
+    }
+
+    /* 주소 박스 */
+    .address{
+        margin: 0px auto;
+        width: 90%; height: 80px;
+        padding: 16px;
+        background-color: #fff;
+        color: #44588A;
+        line-height: 26px;
+        transform: translateY(-10px);
+        position: relative;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
+    }
+    .address > p:first-child{font-size: 14px;}
+    .address p:nth-child(2){font-size: 12px;}
+    .address > i{
+        font-size: 32px;
+        position: absolute; top:5px; right: 40px;
+    }
+
+    /* 음식사진 */
+    .f_list{width: 90%; margin: 0px auto;}
+    .f_list > ul {
+        padding-top: 260px; 
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 12px;
+    }
+    .f_photo{
+        width: 100px; height: 100px;
+        margin-left: 15px;
+    }
+    .f_photo img{
+        width: 100%;
+        height: 100px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
+    }
+    /* 음식메뉴 */
+    .f_text{
+        transform: translateX(5px);
+        width: 120px; height: 120px;
+        margin-top: 10px; margin-right: 12px;
+        padding: 12px; box-sizing: border-box;
+        background-color: #CED6FF;
+        text-align: left;
+        line-height: 16px;
+        position: relative;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
+    }
+    .f_text p:first-child{color: #2F4465;}
+    .f_text p:nth-child(2){
+        margin-top: 6px; 
+        font-size: 6px;
+        color: #535353;
+    }
+    .f_text img{margin-top: 5px; height: 20px;}
+    .f_text span{
+        color: #715CAA;
+        position: absolute; top: 90px; right: 52px;
+    }
+
+    /* 하단 내비게이션 */
+    .f_gnb{
+        background-color: #44588A;
+        width: 100%; height: 60px;
+        position: fixed; bottom: 0px;
+    }
+    .f_gnb > ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 12px;
+        text-align: center;
+    }  
+    .f_gnb > ul > li a{
+        color: #fff;
+        letter-spacing: 0.5px;
+        font-size: 8px;
+        padding-bottom: 10px;
+    }
+    .f_gnb > ul > li img{height: 18px;}
+    .f_gnb > ul > li p{padding-top: 5px; box-sizing: border-box;}
+  

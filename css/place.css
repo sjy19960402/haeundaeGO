@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:"210 옴니고딕OTF";
+    src: local('210 옴니고딕');  /* System font */
+    src: local('210 옴니고딕');  /* IE 8 버전 이하 */
+    src: local('※'), /* else ... */
+           url('../fonts/210-옴니고딕-030.woff') format('woff'),  
+           url('../fonts/210\ 옴니고딕\ 030.ttf') format('truetype'),
+           url('../fonts/210\ 옴니고딕OTF\ 030.otf') format('otf');
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "210 옴니고딕OTF", montserrat, Arial, Helvetica, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  li {
+    list-style: none;
+  }
+  body{overflow-y: auto;}
+  
+  /* 상단헤더 */
+  header {
+    width: 100%; height: 50px;
+    position: fixed;
+    font-size: 20px;
+    color: #44588A;
+    z-index: 100;
+}
+h2{
+    display: block;
+    text-align: center;
+}
+a{
+    font-size: 20px;
+    color: #44588A;
+}
+i{padding-left: 40px; transform: translateY(23px);}
+
+/* 메인공통 */
+main{
+    width: 80%; overflow-x: hidden;
+    margin: 0px auto;
+    padding-top: 70px;
+    margin-bottom: 80px;
+}
+
+/* 메인 검색창 */
+fieldset > legend{display: none; position: relative;}
+fieldset > input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 40px; padding-right: 10px;
+    border: 2px solid #CED6FF;
+    outline: none;
+}
+fieldset > span {display: flex;}
+fieldset > span > i{
+    color: #44588A; 
+    position: absolute; top: 64px;
+}
+fieldset > span > i:first-child{left: 18px;}
+fieldset > span > i:last-child{right:80px;}
+/* 입력창 속성변경 */
+  ::placeholder{color: #44588A;}
+
+ /* 메인 내비게이션 */
+ .m_gnb{width: 100%;}
+ .m_gnb > ul{
+     width: 90%;
+    display: flex;
+    padding: 10px; box-sizing: border-box;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.m_gnb > ul > li i{
+    color: #44588A;
+    font-size: 16px;
+}
+
+/* 메인 콘텐츠 그리드 */
+.wrapper > h2{display: none;}
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 8px;
+    margin:0px auto;
+    width: 100%; height: 600px;
+    padding: 2%; 
+}
+.one{
+grid-column: span 2; 
+grid-row: 1/1;
+background: url('../images/place_3.webp') no-repeat;
+background-position: center;
+background-size: cover;
+}
+.two{
+grid-row: 2/2;
+background: url('../images/place_3.jpeg') no-repeat;
+background-size: cover;
+background-position: center;
+}
+.three{
+    grid-row: 2/2;
+    background: url('../images/m_back.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.four{
+    grid-column: span 2; 
+    grid-row: 3/3;
+    background: url('../images/place_2.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+.five{
+    grid-row: 4/4;
+    background: url('../images/m_menu_btn.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+.six{
+    grid-row: 4/4;
+    background: url('../images/m_back2.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}            
+
+/* 하단 내비게이션 */
+.f_gnb{
+    background-color: #44588A;
+    width: 100%; height: 60px;
+    position: fixed; bottom: 0px;
+}
+.f_gnb > ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    text-align: center;
+}  
+.f_gnb > ul > li a{
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-size: 8px;
+    padding-bottom: 10px;
+}
+.f_gnb > ul > li img{height: 18px;}
+.f_gnb > ul > li p{padding-top: 5px; box-sizing: border-box;}

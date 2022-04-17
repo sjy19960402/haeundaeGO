@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해운대 GO Mobile_login</title>
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- 로그인 화면에 적용되는 서식 -->
+    <link rel="stylesheet" href="./css/login.css" type="text/css">
+    <!-- 공급업체 접두사 자동으로 붙여주는 스크립트 소스 -->
+    <script src="./script/prefixfree.min.js"></script>
+    <!-- 폰트어썸 아이콘을 사용하기 위한 링크 주소 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form method="post" id="joinForm" action="#">
+    <div class="wrap">
+        <div class="login">
+            <a href="main.html" class="back" title="메인페이지로 복귀">
+                <i class="fa-solid fa-arrow-left"></i></a>
+            <h1>LOGIN</h1>
+            
+            <div class="login_id">
+                <h4>ID</h4>
+                <input type="text" name="loginid" placeholder="Email or ID">
+            </div>
+            <div class="login_pw">
+                <h4>Password</h4>
+                <input type="password" name="loginpw" maxlength="20" placeholder="Password">
+            </div>
+            <div class="login_etc">
+                <div class="checkbox">
+                <label>
+                <input type="checkbox" name="longin_save">&nbsp;&nbsp;자동 로그인
+            </label>
+                </div>
+                <div class="forgot_pw">
+                <a href="#">아이디 / 비밀번호 찾기</a>
+            </div>
+            </div>
+            <div class="log_btn">
+                <button type="submit" disabled>로그인</button>
+                <p>
+                <a href="m_join.html" title="회원가입 페이지로 이동">회원가입</a>
+                </p>
+            </div>
+                <ul class="login_sns">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</form>
+</body>
+</html>

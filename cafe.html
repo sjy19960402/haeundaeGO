@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해운대 GO Mobile_cafe</title>
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- 검색 화면에 적용되는 서식 -->
+    <link rel="stylesheet" href="./css/cafe.css" type="text/css">
+    <!-- 폰트어썸 아이콘을 사용하기 위한 링크 주소 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 공급업체 접두사 자동으로 붙여주는 스크립트 소스 -->
+    <script src="./script/prefixfree.min.js"></script>
+</head>
+<body>
+    <!-- 헤더영역 -->
+    <header>
+        <a href="main.html" title="메인페이지로 복귀" class="prev">
+            <i class="fa-solid fa-arrow-left"></i></a>
+            <h2>카페</h2>
+    </header>
+
+    <!-- 메인콘텐츠 -->
+    <main>
+        <!-- 검색창 -->
+        <fieldset>
+            <legend>검색폼</legend>
+            <input class="search-bar__input" type="search" placeholder="검색어 &#124;">
+            <span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-microphone"></i>
+        </span>
+        </fieldset>
+
+        <!-- 메인 내비게이션 -->
+        <nav class="m_gnb">
+            <ul>
+            <li>
+            <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+        </li>
+            <li>
+            <a href="#"><i class="fa-solid fa-camera"></i></a>
+        </li>
+            <li>
+            <a href="#"><i class="fa-solid fa-video"></i></a>
+        </li>
+            <li>
+            <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+        </li>
+        </ul>
+        </nav>
+
+        <!-- 사진그리드 -->
+        <section class="wrapper">
+            <h2>카페 사진</h2>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+        </section>
+
+
+    </main>
+
+     <!-- 푸터영역 --> 
+     <footer>
+        <nav class="f_gnb">
+            <ul>
+                <li><a href="#"><img src="./images/f_list.png" alt="목록보기">
+               <P>목록보기</P></a></li>
+                <li><a href="#"><img src="./images/f_heart.png" alt="찜한목록">
+               <P>찜한목록</P></a></li>
+                <li><a href="#"><img src="./images/f_user.png" alt="마이페이지">
+               <P>마이페이지</P></a></li>
+                <li><a href="#"><img src="./images/f_setting.png" alt="설정">
+               <P>설정</P></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

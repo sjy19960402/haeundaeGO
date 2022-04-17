@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해운대 GO Mobile_main</title>
+    <!-- 즐겨찾기 추가시 생성되는 파비콘 삽입 -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- 메인 화면에 적용되는 서식 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <!-- 폰트어썸 아이콘을 사용하기 위한 링크 주소 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 1. 슬라이드 서식 -->
+   <link href="./css/swiper.css" rel="stylesheet"  type="text/css">
+   <!-- 2. 슬라이드 제이쿼리 파일 -->
+   <script src="./script/swiper.js"></script>
+    <!-- 공급업체 접두사 자동으로 붙여주는 스크립트 소스 -->
+    <script src="./script/prefixfree.min.js"></script>
+    
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <!-- 헤더 영역 -->
+    <header>
+        <!-- 헤더 아이콘-->
+        <h1><a href="main.html" title="메인화면으로 이동">
+            <img src="./images/w_logo.png" alt="로고"></a>
+        </h1>
+        <p><img src="./images/m_logo_p.png" alt="해운대 현지인 투어, 해운대 GO!"></p>
+
+        <ul class="m_con1">
+            <li>
+                <a href="setting.html" title="앱설정화면으로 이동">
+                    <img src="./images/m_setting.png" alt="설정">
+                </a>
+            </li>
+        </ul>
+        
+        <!-- 헤더 아이콘 2 -->
+        <ul class="m_con2">
+            <li>
+                <a href="login.html" title="로그인화면으로 이동">
+                    <img src="./images/m_user.png" alt="로그인">
+                </a>
+            </li>
+            <!-- 토글버튼 -->
+            <li>
+                <label for="toggle" class="toggle_btn">
+                    <img src="./images/m_toggle.png" alt="전체메뉴">
+                </label>
+            </li>
+        </ul>
+        
+    </header>
+
+
+    <!-- 메인콘텐츠 -->
+    <main>
+        <div class="bg">
+          <!-- 내 주변 검색 -->
+        <article class="m_search">
+            <h2><a href="m_search.html" title="검색 페이지로 이동">
+                <img src="./images/m_place.png" alt="지도보기">내 주변 검색</a>
+            </h2>    
+            <p>
+            <a href="main.html" title="주소지입력">주소지입력</a>
+            <a href="main.html" title="현재위치">현재위치</a>
+        </p>
+        </article>
+       
+        <!-- 하단슬라이드 -->
+        <article class="slide">
+            <h2>슬라이드</h2>
+            <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./images/m_menu_btn3.png" alt="맛집">
+                <a href="food.html" title="맛집">맛집</a></div>
+              <div class="swiper-slide"><img src="./images/m_menu_btn.png" alt="관광명소">
+               <a href="place.html" title="관광명소">관광명소</a></div>
+              <div class="swiper-slide"><img src="./images/m_menu_btn2.png" alt="카페">
+                <a href="cafe.html" title="카페">카페</a></div>
+              <div class="swiper-slide"><a href="main.html" title="후기">후기</a>
+                  <p><img src="./images/m_heart_f.png" alt="좋아요이모티콘"> 1000+</p>
+                </div>
+            </div>
+    
+            <!-- 페이지 위치를 표시하기 위한 컨트롤 버튼 나오게 하기 -->
+            <div class="swiper-pagination"></div>
+         </div>
+        </article>
+        
+          <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    </div>     
+    
+     <!-- 내비게이션 -->
+     <nav>
+        <!-- 닫기버튼 -->
+        <label for="toggle" class="close_btn">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <!-- 전체메뉴 -->
+        <ul class="m_gnb">
+            <li>
+                <ul class="m_icon">
+                    <li>MENU</li>
+                    <li><a href="main.html"><i class="fa-solid fa-bell"></i></a></li>
+                    <li><a href="main.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="main.html"><i class="fa-solid fa-share-nodes"></i></a></li>
+                </ul>
+            </li> 
+            <li>
+                <img src="./images/m_heart_f.png" alt="좋아요이모티콘">
+                <a href="like.html" title="내가 찜한 목록 보기">내가 찜한 목록 보기</a>
+            </li>
+            <li>
+                <img src="./images/m_heart_b.png" alt="좋아요이모티콘">
+                <a href="place.html" title="관광명소">관광명소</a>
+            </li>
+            <li>
+                <img src="./images/m_heart_b.png" alt="좋아요이모티콘">
+                <a href="food.html" title="맛집">맛집</a>
+            </li>
+            <li>
+                <img src="./images/m_heart_b.png" alt="좋아요이모티콘">
+                <a href="cafe.html" title="카페">카페</a>
+            </li>
+            <li>
+                <img src="./images/m_heart_b.png" alt="좋아요이모티콘">
+                <a href="review.html" title="후기">후기</a>
+            </li>
+            <li>
+                <img src="./images/m_heart_b.png" alt="좋아요이모티콘">
+                <a href="info.html" title="위치정보">위치정보</a>
+            </li>
+            <li>
+                <img src="./images/m_heart_b.png" alt="좋아요이모티콘"> 
+                <a href="qna.html" title="1:1문의">1:1문의</a>
+            </li>
+            
+        </ul>
+
+    </nav>
+
+    </main>
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
