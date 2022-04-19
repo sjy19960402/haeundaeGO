@@ -1,6 +1,9 @@
 @charset "utf-8";
 
-body{background-color: #E1E7F2;}
+body{
+    background-color: #E1E7F2;
+    overflow: hidden;
+}
 section > h2{display: none;}
 section{width: 100%; margin: 0px auto;}
 img{

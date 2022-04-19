@@ -141,5 +141,6 @@
     color: #fff;
     text-align: center;
     display: inline-block;
-    padding: 18px 135px;
+    width: 100%;
+    line-height: 50px;
   }
